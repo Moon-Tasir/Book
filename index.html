@@ -7,12 +7,20 @@
     <title>Book Archive</title>
     <!-- boodstrap link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- css -->
+    <style>
+        #spiner{
+            display: none;
+        }
+    </style>
+    
 </head>
 <body>
     <!-- Search section -->
     <section >
-        <h1 class="text-info m-5
-        ">Search Your Favorite Book</h1>
+        <h1 class="text-success m-5
+       text-center ">Search Your Favorite Book</h1>
         <div>
             <div class="input-group mb-3 mx-auto w-50 mt-5">
                 <input id="input-value" type="text" class="form-control" placeholder="Write the book name" aria-label="Recipient's username" aria-describedby="basic-addon2">
@@ -22,20 +30,25 @@
               </div>
         </div>
     </section>
-<!-- book list -->
-    <div id="count-book" >
+    <!-- show spinner -->
+<div id="spiner">
+    <span  class="spinner-border m-4 text-primary"></span> 
+     <p class="m-3 text-dark">Searching The Result For You... </p>
+</div>           
+  <!-- show error msg -->
+  <div id="error"></div>
 
-    </div>
-
-    <div id="display-fild" class="row row-cols-1 row-cols-md-3 g-4 mx-auto ">
-   
-    </div>
-
-
+<!-- number of result -->
+    <div id="count-book"></div>
+<!-- book list   -->
+   <section id="display-fild"  class="d-flex row row-cols-1 row-cols-md-3 g-4 "> 
+   </section> 
           <!-- js link  -->
     <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
